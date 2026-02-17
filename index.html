@@ -8,6 +8,27 @@
     <body onload="alert('oindian detecotre')">
         <h2>Zoraiz Saleh Tree</h2>
         <p>Zoraiz smelling lioke ciuryr</p>
-        <button onclick="console.log('i bpress')">Click Me</button>
+        <button id="zo2riaz-is-stinky" onclick="console.log('i bpress')">Click Me</button>
+        <p id="cookie-cntower">0 Cookies</p>
+        <p id="zoriaz-is-stinky">Zoriaz is stinky</p>
+        <button id="cookie-button">🍪</button>
+        <script>
+            const zoriazisstinky = document.getElementById('zoriaz-is-stinky');
+            const zo2riaz = document.getElementById('zo2riaz-is-stinky');
+            const cookieButton = document.getElementById('cookie-button');
+            const cookieCount = document.getElementById('cookie-cntower');
+            let count = 0;
+            let isStinky = 0;
+            
+            cookieButton.addEventListener('click', () => {
+                count++;
+                cookieCount.textContent = `${count} Cookies`;
+            });
+
+            zo2riaz.addEventListener('click', () => {
+                isStinky++;
+                zoriazisstinky.textContent = `Zoriaz is stinky ${isStinky} times`;
+            });
+        </script>
         </body>
 </html>
